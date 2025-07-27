@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://ecommerce-1-ogsk.onrender.com/api/auth/register",
+      "https://ecommerce-backend-c0r9.onrender.com/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://ecommerce-1-ogsk.onrender.com/api/auth/login",
+      "https://ecommerce-backend-c0r9.onrender.com/api/auth/login",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "https://ecommerce-1-ogsk.onrender.com/api/auth/logout",
+      "https://ecommerce-backend-c0r9.onrender.com/api/auth/logout",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "https://ecommerce-1-ogsk.onrender.com/api/auth/check-auth",
+      "https://ecommerce-backend-c0r9.onrender.com/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {
