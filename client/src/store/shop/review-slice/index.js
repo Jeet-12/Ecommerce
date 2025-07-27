@@ -10,7 +10,7 @@ export const addReview = createAsyncThunk(
   "/order/addReview",
   async (formdata) => {
     const response = await axios.post(
-      `https://ecommerce-1-ogsk.onrender.com/api/shop/review/add`,
+      `https://ecommerce-backend-c0r9.onrender.com/api/shop/review/add`,
       formdata
     );
 
@@ -20,7 +20,7 @@ export const addReview = createAsyncThunk(
 
 export const getReviews = createAsyncThunk("/order/getReviews", async (id) => {
   const response = await axios.get(
-    `https://ecommerce-1-ogsk.onrender.com/api/shop/review/${id}`
+    `https://ecommerce-backend-c0r9.onrender.com/api/shop/review/${id}`
   );
 
   return response.data;
