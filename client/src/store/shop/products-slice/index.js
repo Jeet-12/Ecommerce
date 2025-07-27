@@ -18,7 +18,7 @@ export const fetchAllFilteredProducts = createAsyncThunk(
     });
 
     const result = await axios.get(
-      `https://ecommerce-1-ogsk.onrender.com/api/shop/products/get?${query}`
+      `https://ecommerce-backend-c0r9.onrender.com/api/shop/products/get?${query}`
     );
 
     console.log(result);
@@ -31,7 +31,7 @@ export const fetchProductDetails = createAsyncThunk(
   "/products/fetchProductDetails",
   async (id) => {
     const result = await axios.get(
-      `https://ecommerce-1-ogsk.onrender.com/api/shop/products/get/${id}`
+      `https://ecommerce-backend-c0r9.onrender.com/api/shop/products/get/${id}`
     );
 
     return result?.data;
