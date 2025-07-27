@@ -9,10 +9,10 @@ const initialState = {
   orderDetails: null,
 };
 
-export const createNewOrder = createAsyncThunk(
+export const createNewOrder = createAsyncThunk( 
   "/order/createNewOrder",
   async (orderData) => {
-    const response = await axios.post(
+    const response = await axios.post( 
       "https://ecommerce-backend-c0r9.onrender.com/api/shop/order/create",
       orderData
     );
