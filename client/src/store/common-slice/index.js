@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `https://ecommerce-1-ogsk.onrender.com/api/common/feature/get`
+      `https://ecommerce-backend-c0r9.onrender.com/api/common/feature/get`
     );
 
     return response.data;
@@ -21,7 +21,7 @@ export const addFeatureImage = createAsyncThunk(
   "/order/addFeatureImage",
   async (image) => {
     const response = await axios.post(
-      `https://ecommerce-1-ogsk.onrender.com/api/common/feature/add`,
+      `https://ecommerce-backend-c0r9.onrender.com/api/common/feature/add`,
       { image }
     );
 
